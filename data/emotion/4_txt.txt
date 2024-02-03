@@ -1,1 +1,1 @@
-Modify the speech to convey the feeling of the given wav's emotion.
+Adopt the emotional timbre and undertones present in the provided audio.
