@@ -1,1 +1,1 @@
-clone
+Eradicate 'the' that appears in the sentence.
