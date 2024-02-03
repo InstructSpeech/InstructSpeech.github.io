@@ -109,7 +109,7 @@ function generateFreeRegionAdd(tableId) {
   let ext = ['_txt.txt', '_raw.txt', '_new.txt', '_gt.wav', '_se.wav', '_a3t.wav', '_base.wav','_medium.wav','_large.wav'];
 
   for (var i = 0; i < 4; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/Region-free/add/' + i, ext, 0);
+    generateExampleRow(table.rows[1 + i], 'data/Region_free/add/' + i, ext, 0);
   }
 }
 
@@ -118,7 +118,7 @@ function generateFreeRegionDelete(tableId) {
   let ext = ['_txt.txt', '_raw.txt', '_new.txt', '_gt.wav', '_se.wav', '_a3t.wav', '_base.wav','_medium.wav','_large.wav'];
 
   for (var i = 0; i < 4; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/Region-free/delete/' + i, ext, 0);
+    generateExampleRow(table.rows[1 + i], 'data/Region_free/delete/' + i, ext, 0);
   }
 }
 
@@ -127,7 +127,7 @@ function generateFreeRegionReplace(tableId) {
   let ext = ['_txt.txt', '_raw.txt', '_new.txt', '_gt.wav', '_se.wav', '_a3t.wav', '_base.wav','_medium.wav','_large.wav'];
 
   for (var i = 0; i < 4; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/Region-free/replace/' + i, ext, 0);
+    generateExampleRow(table.rows[1 + i], 'data/Region_free/replace/' + i, ext, 0);
   }
 }
 
