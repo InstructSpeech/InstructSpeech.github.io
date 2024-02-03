@@ -1,1 +1,1 @@
-clone
+Mimic the emotional nuances and tonal quality present in the referenced speech.
