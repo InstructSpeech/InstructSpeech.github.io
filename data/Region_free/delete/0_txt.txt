@@ -1,1 +1,1 @@
-clone
+Only eradicate the first 'the' that appears in the sentence.
