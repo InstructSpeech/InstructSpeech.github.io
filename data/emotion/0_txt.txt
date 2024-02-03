@@ -1,1 +1,1 @@
-Change the emotional inflection of the speech to convey following emotion.
+Parrot the emotional sentiment conveyed in the referenced speech.
