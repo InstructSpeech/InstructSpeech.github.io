@@ -1,1 +1,1 @@
-Clone the sad
+Rearrange the speech to communicate the feeling of the given wav emotion.
