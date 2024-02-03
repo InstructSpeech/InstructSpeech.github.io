@@ -1,1 +1,1 @@
-clone
+Substitude 'was' in the sentence with new word 'moist'.
