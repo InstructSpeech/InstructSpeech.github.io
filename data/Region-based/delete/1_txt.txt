@@ -1,1 +1,1 @@
-Eradicate the 'before' that appears in the sentence.
+Masked region
