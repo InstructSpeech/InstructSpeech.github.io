@@ -1,1 +1,1 @@
-Remove the word 'Some' within the sentence.
+Masked region
