@@ -1,1 +1,1 @@
-Embed the 'and' before 'bake' within the sentence.
+Masked region
