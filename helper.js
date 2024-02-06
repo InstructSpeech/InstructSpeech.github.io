@@ -41,39 +41,37 @@ function generateExampleRowCross(table_row, base_path, filename_ext, col_offset)
   }
 }
 
-function generateEmotion(tableId) {
+function generateStyle(tableId) {
   let table = document.getElementById(tableId);
-  let ext = ['_txt.txt', '_gt.wav', '_prompt.wav', '_yourtts.wav', '_base.wav','_medium.wav','_large.wav'];
-
-  for (var i = 0; i < 5; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/emotion/' + i, ext, 0);
+  let ext = ['_txt.txt', '_gt.wav', '_prompt.wav', '_yourtts.wav', '_medium.wav'];
+  for (var i = 0; i < 7; i++) {
+    generateExampleRow(table.rows[1 + i], 'data/style/' + i, ext, 0);
   }
 }
 
-function generateStyle(tableId) {
+function generateEnergy(tableId) {
   let table = document.getElementById(tableId);
-  let ext = ['_txt.txt', '_gt.wav', '_prompt.wav', '_yourtts.wav', '_base.wav','_medium.wav','_large.wav'];
-  console.log(12347)
-  for (var i = 0; i < 7; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/style/' + i, ext, 0);
+  let ext = ['_txt.txt', '_all.txt', '_gt.wav', '_medium.wav'];
+
+  for (var i = 0; i < 6; i++) {
+    generateExampleRow(table.rows[1 + i], 'data/energy/' + i, ext, 0);
   }
 }
 
 function generateSpeed(tableId) {
   let table = document.getElementById(tableId);
   let ext = ['_txt.txt', '_all.txt', '_gt.wav', '_base.wav','_medium.wav','_large.wav'];
-  console.log(12345)
   for (var i = 0; i < 6; i++) {
     generateExampleRow(table.rows[1 + i], 'data/speed/' + i, ext, 0);
   }
 }
 
-function generateEnergy(tableId) {
+function generateEmotion(tableId) {
   let table = document.getElementById(tableId);
-  let ext = ['_txt.txt', '_all.txt', '_gt.wav', '_base.wav','_medium.wav','_large.wav'];
+  let ext = ['_txt.txt', '_gt.wav', '_prompt.wav', '_yourtts.wav', '_base.wav','_medium.wav','_large.wav'];
 
-  for (var i = 0; i < 6; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/energy/' + i, ext, 0);
+  for (var i = 0; i < 5; i++) {
+    generateExampleRow(table.rows[1 + i], 'data/emotion/' + i, ext, 0);
   }
 }
 
@@ -131,15 +129,25 @@ function generateFreeRegionReplace(tableId) {
   }
 }
 
-generateEmotion('emotion-conversion-table')
+function generatePipeline(tableId) {
+  let table = document.getElementById(tableId);
+  let ext = ['_txt.txt', '_gt.wav', '_emotion.wav', '_style.wav', '_speed.wav','_energy.wav','_semantic.wav'];
+
+  for (var i = 0; i < 2; i++) {
+    generateExampleRow(table.rows[1 + i], 'data/pipeline/' + i, ext, 0);
+  }
+}
+
 generateStyle('style-conversion-table')
-generateSpeed('Speed-conversion-table')
 generateEnergy('Energy-conversion-table')
+generateSpeed('Speed-conversion-table')
+generateEmotion('emotion-conversion-table')
 generateRegionAdd('add-region-based-table')
 generateRegionDelete('delete-region-based-table')
 generateRegionReplace('replace-region-based-table')
 generateFreeRegionAdd('add-region-free-table')
 generateFreeRegionDelete('delete-region-free-table')
 generateFreeRegionReplace('replace-region-free-table')
+generatePipeline('pipeline-table')
 
 
