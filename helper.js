@@ -129,14 +129,19 @@ function generateFreeRegionReplace(tableId) {
   }
 }
 
-function generatePipeline(tableId) {
-  let table = document.getElementById(tableId);
-  let ext = ['_txt.txt', '_gt.wav', '_emotion.wav', '_style.wav', '_speed.wav','_energy.wav','_semantic.wav'];
-
-  for (var i = 0; i < 2; i++) {
-    generateExampleRow(table.rows[1 + i], 'data/pipeline/' + i, ext, 0);
-  }
-}
+function generatePipeline(tableId) {  
+  let table = document.getElementById(tableId);  
+  let ext = ['_gt.wav', '_emotion.wav', '_style.wav', '_speed.wav','_energy.wav','_semantic.wav'];  
+  let ext1 = ['_gt.txt','_emotion.txt','_style.txt','_speed.txt','_energy.txt','_semantic.txt']  
+  
+  for (var i = 0; i < 4; i++) {  
+    if (i % 2 === 0) {  
+      generateExampleRow(table.rows[1 + i], 'data/pipeline/' + i, ext, 0);  
+    } else {  
+      generateExampleRow(table.rows[1 + i], 'data/pipeline/' + i, ext1, 0);  
+    }  
+  } 
+} 
 
 generateStyle('style-conversion-table')
 generateEnergy('Energy-conversion-table')
